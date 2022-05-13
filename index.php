@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <title>SQLIA Dummy</title>
+   <title>The Gadget Shop</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 </head>
 <body>
-   <h1 align="center">Tatum Super Secure Web App *Wink Wink*</h1>
+   <h1 align="center">The Gadget Shop</h1>
    <div class="container">
    <form method="GET">
       <label for="pname">product name</label>
@@ -40,8 +40,12 @@
          if (!empty($price)) {
             $query .= "AND price LIKE '%{$_GET['price']}%'";
          }
-         $result = $pdo->query($query);
-         var_dump($result);
+         try {
+         $result = $pdo->query($query) or die(mysqli_error($pdo));
+         } catch(Exception $e) {
+            print $e . "\n";
+         }
+         //var_dump($result);
          if ($result) {
             while($row = $result->fetch()) { ?>
                <tr>
