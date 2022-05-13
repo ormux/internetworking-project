@@ -1,9 +1,11 @@
 <h1 align="center">The Gadget Shop</h1>
 <h5 align="center">13/05/2022</h5>
 
+![gadget-shop](https://user-images.githubusercontent.com/19354579/168243233-dea8daec-3bb0-4bf1-88b3-ff90cfcd96a4.png)
+
 <h3 align="center">Description</h3>
 
-A simple web application designed to be vulnerable to all kinds of SQL attacks. It is not safe to deploy this in any production server, thus use it at your own risk. I am not responsible for any damages that you might experience.
+A simple web application designed to be vulnerable to all kinds of SQL attacks. It is not safe to deploy this in any production server, use it at your own risk. I am not responsible for any damages that you might experience.
 
 <h3 align="center">Instructions</h3>
 
