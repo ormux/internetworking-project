@@ -1,0 +1,24 @@
+<?php 
+include('pdo.php');
+$pdo = ( new MySQLConnection() )->connect();
+if($pdo === null) {
+   print "Could not connect to DB";
+} else {
+   print "DB connection successful";
+}
+/*$DB_HOST = "localhost";
+$DB_NAME = "sswa";
+$DB_USER = "sswaUser";
+$DB_PASS = "sswaPass";
+
+//$db = new mysqli($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME);
+$db = mysqli_connect($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME);
+
+if(!$db) {
+   //die("database connection failed: " . $db->connect_error);
+   die("database connection failed: ");
+} 
+echo "Connected successfully"
+*/
+?>
+<br>

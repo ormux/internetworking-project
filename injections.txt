@@ -1,0 +1,3 @@
+'; UPDATE users SET password='hacked' WHERE username='tatum'-- -
+'; UPDATE users SET password='hacked' WHERE username='tatum';-- -
+test'); DELETE from users;-- -
