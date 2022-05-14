@@ -1,8 +1,8 @@
-DROP USER IF EXISTS 'sswa'@'localhost';
-CREATE USER 'sswaUser'@'localhost' IDENTIFIED BY 'sswaPass';
-CREATE DATABASE IF NOT EXISTS sswa;
-GRANT ALL PRIVILEGES ON sswa.* TO 'sswaUser'@'localhost';
-USE sswa;
+DROP USER IF EXISTS 'tgs'@'localhost';
+CREATE USER 'tgsUser'@'localhost' IDENTIFIED BY 'tgsPass';
+CREATE DATABASE IF NOT EXISTS tgs;
+GRANT ALL PRIVILEGES ON tgs.* TO 'tgsUser'@'localhost';
+USE tgs;
 DROP TABLE IF EXISTS users;
 DROP TABLE IF EXISTS products;
 CREATE TABLE users(
@@ -21,7 +21,7 @@ CREATE TABLE products(
 INSERT INTO users(username, password) VALUES ('tatum', 'pass123');
 INSERT INTO users(username, password) VALUES ('alexa', 'secret');
 INSERT INTO users(username, password) VALUES ('kaila', 'letmein');
-INSERT INTO users(username, password) VALUES ('willy', 'darkforce');
+INSERT INTO users(username, password) VALUES ('willy', 'qwerty');
 
 INSERT INTO products(name, price) VALUES ('pinephone', '100');
 INSERT INTO products(name, price) VALUES ('iphone 13', '200');
